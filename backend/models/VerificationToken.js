@@ -4,7 +4,7 @@ const tokenSchema = new mongoose.Schema(
     {
         user:{type:mongoose.Schema.Types.ObjectId,ref:"User",required:true},
 
-        type:{type:String,enum:["verify","reset","login"],required:true},
+        type:{type:String,enum:["verify","reset"],required:true},
 
         code:{type:String,required:true},
 
