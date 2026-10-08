@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { Heart } from "lucide-react";
+import Register from "./pages/Register";
+import Verify from "./pages/Verify";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             </div>
           }
         />
+        <Route path="/register" element={<Register />} />
+        <Route path="/verify" element={<Verify/>}/>
       </Routes>
     </>
   );
